@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Root version="1">
+	<StartupStreams>
+		<!-- conecto al arrancar el stream de la camara simulada (rtp por udp 5004) a la aplicacion envivo -->
+		<StartupStream>
+			<Application>envivo/_definst_</Application>
+			<MediaCasterType>rtp</MediaCasterType>
+			<StreamName>cam.stream</StreamName>
+		</StartupStream>
+	</StartupStreams>
+</Root>

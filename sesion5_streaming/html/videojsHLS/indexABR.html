@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>HLS con ABR con Video.js</title>
+  <link href="https://vjs.zencdn.net/7.1.0/video-js.css" rel="stylesheet">
+</head>
+<body>
+  <h1>HLS con ABR con Video.js</h1>
+  <video id="my-video" class="video-js" controls
+        preload="auto" width="640" height="360">
+    <!-- url hls del smil de la aplicacion abr: el cliente elige entre sus cuatro calidades -->
+    <source src="http://192.168.207.224:1935/abr/smil:conejo.smil/playlist.m3u8" type="application/x-mpegURL">
+    <p class="vjs-no-js">
+        Para ver este video debes activar JavaScript y tener un navegador
+        moderno que <a href="https://videojs.com/html5-video-support/">
+        soporte HTML5 video</a>
+    </p>
+  </video>
+  <script src="https://vjs.zencdn.net/7.1.0/video.js"></script>
+  <!-- librerias extra para que el usuario pueda elegir la calidad a mano -->
+  <script src="https://cdn.jsdelivr.net/npm/videojs-contrib-quality-levels@2.0.7/dist/videojs-contrib-quality-levels.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/videojs-hls-quality-selector@0.0.8/dist/videojs-hls-quality-selector.min.js"></script>
+  <script>
+    // creo el reproductor y le pongo el selector de calidad
+    var player = videojs('my-video')
+    player.hlsQualitySelector();
+  </script>
+</body>
+</html>

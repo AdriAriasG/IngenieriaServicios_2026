@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<smil title="conejo">
+	<body>
+		<!-- las cuatro calidades del mismo video; el cliente elige segun su ancho de banda -->
+		<!-- bitrates de video y audio sacados con ffprobe -show_entries stream=bit_rate -->
+		<switch>
+			<video height="360" src="mp4:conejo_1100.mp4" systemLanguage="eng" width="640">
+				<param name="videoBitrate" value="993719" valuetype="data"></param>
+				<param name="audioBitrate" value="131804" valuetype="data"></param>
+			</video>
+			<video height="268" src="mp4:conejo_750.mp4" systemLanguage="eng" width="476">
+				<param name="videoBitrate" value="644274" valuetype="data"></param>
+				<param name="audioBitrate" value="131804" valuetype="data"></param>
+			</video>
+			<video height="180" src="mp4:conejo_450.mp4" systemLanguage="eng" width="320">
+				<param name="videoBitrate" value="344453" valuetype="data"></param>
+				<param name="audioBitrate" value="131804" valuetype="data"></param>
+			</video>
+			<video height="120" src="mp4:conejo_300.mp4" systemLanguage="eng" width="212">
+				<param name="videoBitrate" value="170819" valuetype="data"></param>
+				<param name="audioBitrate" value="131804" valuetype="data"></param>
+			</video>
+		</switch>
+	</body>
+</smil>

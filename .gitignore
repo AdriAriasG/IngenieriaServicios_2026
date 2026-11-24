@@ -2,3 +2,16 @@ Guiones/
 basedatos/
 __pycache__/
 IMAGENES/
+
+# videos de la sesion 5 (ocupan mucho, se pueden bajar de nuevo)
+sesion5_streaming/html/video5/*.mp4
+sesion5_streaming/html/video5/*.webm
+sesion5_streaming/html/video5/*.ogv
+sesion5_streaming/html/video5/*.png
+sesion5_streaming/wowza/content/*.mp4
+# clave de licencia de wowza que trae la imagen
+sesion5_streaming/wowza/conf/Server.license
+sesion5_streaming/wowza/conf/LicenseDomainCache.properties
+# cuentas de prosody y claves privadas de los certificados (no se suben)
+sesion6_xmpp/prosody/data/
+sesion6_xmpp/prosody/etc/prosody/certs/*.key

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Video HTML5</title>
+</head>
+<body>
+  <h1>Big Buck Bunny con HTML5</h1>
+  <!-- pongo las tres versiones; el navegador usa la primera que sepa reproducir -->
+  <!-- ancho y alto iguales a los del video (640x360, sacados con ffprobe) -->
+  <video width="640" height="360" controls>
+    <source src="big_buck_bunny.mp4" type="video/mp4; codecs=avc1.42E01E,mp4a.40.2">
+    <source src="big_buck_bunny.webm" type="video/webm; codecs=vp8,vorbis">
+    <source src="big_buck_bunny.ogv" type="video/ogg; codecs=theora,vorbis">
+    <!-- si el navegador no entiende la etiqueta video sale este texto -->
+    <p>No se puede reproducir el video</p>
+  </video>
+</body>
+</html>
